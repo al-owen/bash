@@ -11,7 +11,7 @@ echo $nom
 ```
 
 Per accedir al valor emmagatzemat en una variable, fem servir el símbol del dòlar (`$`) seguit del nom de la variable.
-Aquesta línia crea una variable anomenada nom i li assigna el valor Tech Sage. És important no posar espais al voltant de l'igual (=), ja que Bash els interpretaria com a arguments separats.
+Aquesta línia crea una variable anomenada nom i li assigna el valor Álvaro. És important no posar espais al voltant de l'igual (=), ja que Bash els interpretaria com a arguments separats.
 
 ### Variables Especials
 
