@@ -33,6 +33,7 @@ A continuació es mostren alguns dels codis de sortida més comuns en Bash
 | `130` | Execució interrompuda per l'usuari (`CTRL + C`) |
 | `137` | Procés finalitzat amb `kill -9`                 |
 | `255` | Error fora de rang (retorn d'un valor no vàlid) |
+
 També podem definir un codi de sortida en un script utilitzant `exit <codi>`.
 ```sh
 #!/bin/bash
