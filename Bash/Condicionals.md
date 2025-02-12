@@ -36,7 +36,7 @@ else
 fi
 ```
 ### Operadors de Comparació
-
+#### Comparacions numèriques
 Els condicionals sovint fan servir operadors de comparació dins dels corxets `[ ]` per avaluar condicions. Alguns dels operadors més comuns inclouen:
 
 - `-eq`: igual a
@@ -45,12 +45,34 @@ Els condicionals sovint fan servir operadors de comparació dins dels corxets `[
 - `-ge`: major o igual a
 - `-lt`: menor que
 - `-le`: menor o igual a
-- `-z`: cadena buida
-- `-n`: cadena no buida
-- = : igual (per a cadenes)
-- `!=`: no igual (per a cadenes)
-- `-f`: l'arxiu existeix i és un fitxer regular
-- `-d`: l'arxiu existeix i és un directori
+
+#### Comparacions de cadenes de text
+Quan treballem amb **text**, els operadors són:
+
+- == o = :	És igual a
+- `!=`:	No és igual a
+- `<`:	Ve abans alfabèticament
+- `>`:   Ve després alfabèticament
+- `-z`:	És buida (zero caràcters)
+- `-n`:	No és buida
+
+#### Comparació de fitxers
+Quan treballem amb **fitxers i directoris**, podem utilitzar:
+
+- `-e`:	Existeix (fitxer o directori)
+- `-f`:	És un fitxer regular
+- `-d`:	És un directori
+- `-s`:	No està buit
+- `-r`:	Té permisos de lectura
+- `-w`:	Té permisos d'escriptura
+- `-x`:	Té permisos d'execució
+#### Condicions compostes
+Podem combinar condicions amb **AND (`&&`)** i **OR (`||`)**.
+- `&&`:	AND (totes les condicions han de ser certes)
+- `||`: OR (S'ha de complir com a mínim una condició)
+#### Operadors d'inversió
+Si volem **invertir** una condició, podem utilitzar `!` (**NOT**).
+- `!`:	Inverteix la condició
 
 ### Estructura `case`
 
@@ -86,3 +108,4 @@ case $opcio in
 esac
 ```
 Els condicionals són fonamentals per a la lògica de decisió en els scripts de Bash, permetent executar diferents seccions de codi basades en condicions específiques. La correcta utilització d'aquestes estructures pot fer que els teus scripts siguin molt més potents i flexibles.
+
